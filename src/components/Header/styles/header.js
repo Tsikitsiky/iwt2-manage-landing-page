@@ -6,11 +6,12 @@ export const Container = styled.div`
     align-items: center;
     max-width: 1040px;
     margin: 0 auto;
+    padding: 2rem 0 ;
 `;
 export const Link = styled.a`
     text-decoration: none;
     color: hsl(228, 39%, 23%);
-    font-style: 16px;
+    font-style: 18px;
 `;
 export const Logo = styled.img``;
 export const Nav = styled.nav`

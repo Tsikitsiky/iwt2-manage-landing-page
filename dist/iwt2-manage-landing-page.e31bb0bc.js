@@ -32119,7 +32119,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    text-decoration: none;\n    color: hsl(228, 39%, 23%);\n    font-style: 16px;\n"]);
+  var data = _taggedTemplateLiteral(["\n    text-decoration: none;\n    color: hsl(228, 39%, 23%);\n    font-style: 18px;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -32129,7 +32129,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    max-width: 1040px;\n    margin: 0 auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    max-width: 1040px;\n    margin: 0 auto;\n    padding: 2rem 0 ;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32318,7 +32318,141 @@ function HeaderContainer() {
 
 var _default = HeaderContainer;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../components/Header":"src/components/Header/index.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../components/Header":"src/components/Header/index.js"}],"src/components/MainHeader/styles/mainHeader.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Button = exports.Text = exports.Title = exports.Container = void 0;
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    background-color: hsl(12, 88%, 59%);\n    color: hsl(0, 0%, 98%);\n    border: none;\n    outline: none;\n    padding: 0.5rem 1rem;\n    border-radius: 10px;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    max-width: 400px;\n    font-size: 18px;\n    color: hsl(227, 12%, 61%);\n    @media(max-width: 768px) {\n        font-size: 16px;\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    max-width: 400px;\n    font-size: 52px;\n    color: hsl(228, 39%, 23%);\n    @media(max-width: 768px) {\n        font-size: 42px;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    background-image: url('images/illustration-intro.svg');\n    background-position : right;\n    background-repeat: no-repeat;\n    background-size: 45%;\n    width: 100%;\n    padding-top: 50px;\n    max-width: 1040px;\n    margin: 0 auto;\n\n    @media(max-width: 768px) {\n        background-position: top;\n        background-size: 370px;\n        padding-top: 300px;\n        text-align: center;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Container = _styledComponents.default.section(_templateObject());
+
+exports.Container = Container;
+
+var Title = _styledComponents.default.h1(_templateObject2());
+
+exports.Title = Title;
+
+var Text = _styledComponents.default.p(_templateObject3());
+
+exports.Text = Text;
+
+var Button = _styledComponents.default.button(_templateObject4());
+
+exports.Button = Button;
+},{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/components/MainHeader/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.MainHeader = MainHeader;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _mainHeader = require("./styles/mainHeader");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function MainHeader(_ref) {
+  var children = _ref.children,
+      restProps = _objectWithoutProperties(_ref, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_mainHeader.Container, restProps, children);
+}
+
+MainHeader.Title = function MainHeaderTitle(_ref2) {
+  var children = _ref2.children,
+      restProps = _objectWithoutProperties(_ref2, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_mainHeader.Title, restProps, children);
+};
+
+MainHeader.Text = function MainHeaderText(_ref3) {
+  var children = _ref3.children,
+      restProps = _objectWithoutProperties(_ref3, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_mainHeader.Text, restProps, children);
+};
+
+MainHeader.Button = function MainHeaderButton(_ref4) {
+  var children = _ref4.children,
+      restProps = _objectWithoutProperties(_ref4, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_mainHeader.Button, restProps, children);
+};
+},{"react":"node_modules/react/index.js","./styles/mainHeader":"src/components/MainHeader/styles/mainHeader.js"}],"src/containers/mainHeader.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _MainHeader = require("../components/MainHeader");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MainHeaderContainer() {
+  return /*#__PURE__*/_react.default.createElement(_MainHeader.MainHeader, null, /*#__PURE__*/_react.default.createElement(_MainHeader.MainHeader.Title, null, "Bring everyone together to build better products."), /*#__PURE__*/_react.default.createElement(_MainHeader.MainHeader.Text, null, "Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view."), /*#__PURE__*/_react.default.createElement(_MainHeader.MainHeader.Button, null, "Get Started"));
+}
+
+var _default = MainHeaderContainer;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../components/MainHeader":"src/components/MainHeader/index.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32330,15 +32464,17 @@ var _react = _interopRequireDefault(require("react"));
 
 var _header = _interopRequireDefault(require("./containers/header"));
 
+var _mainHeader = _interopRequireDefault(require("./containers/mainHeader"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_mainHeader.default, null));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./containers/header":"src/containers/header.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./containers/header":"src/containers/header.js","./containers/mainHeader":"src/containers/mainHeader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -32378,7 +32514,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63015" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51486" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
