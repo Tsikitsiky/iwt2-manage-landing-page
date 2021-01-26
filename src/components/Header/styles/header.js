@@ -35,8 +35,9 @@ export const Button = styled.button`
     color: hsl(0, 0%, 98%);
     border: none;
     outline: none;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 18px;
+    border-radius: 30px;
     @media(max-width: 1000px) {
         display: none;
     }
