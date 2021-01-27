@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: "Be Vietnam", sans-serif;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+}

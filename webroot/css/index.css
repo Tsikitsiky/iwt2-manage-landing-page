@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: "Be Vietnam", sans-serif; }
+
+h1, h2, h3, h4, h5, p {
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+button {
+  cursor: pointer; }
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.header-site__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block: 16px; }
+  .header-site__container .get-started {
+    display: none; }
+
+.a11y {
+  display: none;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; }

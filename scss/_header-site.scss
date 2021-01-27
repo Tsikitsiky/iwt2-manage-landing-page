@@ -1,0 +1,11 @@
+.header-site__container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 16px;
+
+    .get-started {
+        display: none;
+    }
+   }
