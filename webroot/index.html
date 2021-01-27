@@ -16,24 +16,166 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet">
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-			body {
-				font-family: 'Be Vietnam', sans-serif;
-				margin: 0;
-			}
-			
-		</style>
 	</head>
 	<body>
-		<div id="root"></div>
-		<script src="index.js"></script>
+		<input type="checkbox" name="menu_checkbox" id="menu_checkbox">
+    <header class="header-site">
+        <div class="header-site__container container">
+            <h1 class="header-site__heading logo">
+                <a href="/">
+                    <span class="a11y">logo</span>
+                    <img src="./images/logo.svg" alt="Manage Logo">
+                </a>
+             </h1>
+             <nav class="header-site__menu">
+                <ul>
+                  <li><a href="/pricing">Pricing</a></li>
+                  <li><a href="/product">Product</a></li>
+                  <li><a href="/about-us">About us</a></li>
+                  <li><a href="/careers">Careers</a></li>
+                  <li><a href="/community">Community</a></li>
+                </ul>
+              </nav>
+              <label for="menu_checkbox" class="icon icon_menu">
+                  <span class="a11y">Open the menu</span>
+              </label>
+              <button class="btn get-started">
+                  <a href="/#">Get Started</a>
+              </button>
+        </div>
+	</header>
+	<main>
+		<header class="main-header">
+            <div class="main-header__container container">
+                <h2 class="main-header__heading">Bring everyone together to build better products.</h2>
+                <p class="main-header__description">
+                    Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+                </p>
+                <button class="btn get-started">
+					<a href="/#">Get Started</a>
+				</button>
+            </div>
+		</header>
+		<section class="section-difference">
+			<div class="section-difference__container container">
+				<header class="section-difference__header">
+					<h2 class="section-difference__header--heading">Bring everyone together to build better products.</h2>
+					<p class="section-difference__header--description">
+						Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+					</p>
+				</header>
+				<ul class="section-difference__list">
+					<li class="difference1">
+						<h3>Track Company wide process</h3>
+						<p>See your day-to-day tasks fit into the wide vision. Go from tracking progress at a milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+					</li>
+					<li class="difference2">
+						<h3>Advanced built-in reports</h3>
+						<p>Set internal delivery estimstes and track progress towards company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.	</p>
+					</li>
+					<li class="difference3">
+						<h3>Everything you need in one place</h3>
+						<p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="section-testemonials container">
+			<div class="section-testemonials__container">
+				<header class="section-testemonials__header">
+					<h2 class="section-testemonials__header--heading">What they have said</h2>
+				</header>
+				<ul class="testemonials-list">
+					<li>
+						<h3>Anisha Li</h3>
+						<img src="./images/avatar-anisha.png" alt="Anisha Li">
+						<p>" Manage has supercharge our team's workflow. The maintain visibility on larger milstones at all times keeps everyone motivated."</p>
+					</li>
+					<li>
+						<h3>Ali Bravo</h3>
+						<img src="./images/avatar-ali.png" alt="Ali Bravo">
+						<p>"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confucsing and everyone is much more focused."</p>
+					</li>
+					<li>
+						<h3>Richard Watts</h3>
+						<img src="./images/avatar-richard.png" alt="Richard Watts">
+						<p>"Manage allows us to provide structure and productivity. It keeps us organized and focused. I can't stop recommend them to everyone I talk to"</p>
+					</li>
+					<li>
+						<h3></h3>
+						<img src="./images/avatar-shanai.png" alt="">
+						<p></p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="main-footer">
+			<div class="main-footer__container container">
+				<p class="main-footer__text">Simplify how your team works today.</p>
+				<button class="btn get-started">
+					<a href="/#">Get Started</a>
+				</button>
+			</div>
+		</footer>
+	</main>
+	<footer class="footer-site">
+		<div class="footer-site__container container">
+			<div class="footer-site__social-media-list">
+                <p class="logo">
+                    <a href="/">
+                        <span class="a11y">logo</span>
+                        
+                    </a>
+                </p>
+                <p class="a11y">See us on web</p>
+                <ul>
+                    <li class="icon icon-facebook">
+                        <a href="/facebook">
+                            <span class="a11y">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="icon icon-youtube">
+                        <a href="/youtube">
+                            <span class="a11y">Youtube</span>
+                        </a>
+                    </li>
+                    <li class="icon icon-twitter">
+                        <a href="/twitter">
+                            <span class="a11y">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="icon icon-pinterest">
+                        <a href="/pinterest">
+                            <span class="a11y">Pinterest</span>
+                        </a>
+                    </li>
+                    <li class="icon icon-instagram">
+                        <a href="/instagram">
+                            <span class="a11y">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="sitemap">
+                <p class="a11y">Sitemap</p>
+                <ul>
+					<li><a href="/home">Home</a></li>
+					<li><a href="/pricing">Pricing</a></li>
+					<li><a href="/product">Product</a></li>
+					<li><a href="/about-us">About us</a></li>
+					<li><a href="/careers">Careers</a></li>
+					<li><a href="/community">Community</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                  </ul>
+            </nav>
+            <div class="foot">
+				<div>
+					<button class="btn update">Updates in your inbox...</button>
+					<button class="btn go">Go</button>
+				</div>
+                <p>Copyright. All Rights Reserved</p>
+            </div>
+		</div>
+	</footer>
 	</body>
 </html>
