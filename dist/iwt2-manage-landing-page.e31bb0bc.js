@@ -32324,14 +32324,24 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Button = exports.Text = exports.Container = void 0;
+exports.Button = exports.Text = exports.TextWrapper = exports.Container = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    background-color: hsl(0, 0%, 98%);\n    color: hsl(12, 88%, 59%);\n    border: none;\n    outline: none;\n    padding: 1rem 2rem;\n    border-radius: 30px;\n    font-size: 18px;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n     font-size: 42px;\n    color: hsl(0, 0%, 98%);\n    max-width: 50%;\n    @media(max-width: 768px) {\n        font-size: 36px;\n        max-width: 80%;\n        text-align: center;\n    }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -32341,7 +32351,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n    max-width: 1040px;\n    margin: 0 auto;\n    padding: 50px 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    @media(max-width: 768px) {\n        flex-direction: column;\n        text-align: center;\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -32351,7 +32361,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n    background-color: hsl(12, 88%, 59%);\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -32366,11 +32376,15 @@ var Container = _styledComponents.default.section(_templateObject());
 
 exports.Container = Container;
 
-var Text = _styledComponents.default.h2(_templateObject2());
+var TextWrapper = _styledComponents.default.div(_templateObject2());
+
+exports.TextWrapper = TextWrapper;
+
+var Text = _styledComponents.default.h2(_templateObject3());
 
 exports.Text = Text;
 
-var Button = _styledComponents.default.button(_templateObject3());
+var Button = _styledComponents.default.button(_templateObject4());
 
 exports.Button = Button;
 },{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/components/mainFooter/index.js":[function(require,module,exports) {
@@ -32411,6 +32425,13 @@ MainFooter.Button = function MainFooterButton(_ref3) {
 
   return /*#__PURE__*/_react.default.createElement(_mainFooter.Button, restProps, children);
 };
+
+MainFooter.TextWrapper = function MainFooterTextWrapper(_ref4) {
+  var children = _ref4.children,
+      restProps = _objectWithoutProperties(_ref4, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_mainFooter.TextWrapper, restProps, children);
+};
 },{"react":"node_modules/react/index.js","./styles/mainFooter":"src/components/mainFooter/styles/mainFooter.js"}],"src/containers/mainFooter.js":[function(require,module,exports) {
 "use strict";
 
@@ -32426,7 +32447,7 @@ var _mainFooter = _interopRequireDefault(require("../components/mainFooter"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function MainFooterContainer() {
-  return /*#__PURE__*/_react.default.createElement(_mainFooter.default, null, /*#__PURE__*/_react.default.createElement(_mainFooter.default.Text, null, "Simplify how your team works today."), /*#__PURE__*/_react.default.createElement(_mainFooter.default.Button, null, "Get Started"));
+  return /*#__PURE__*/_react.default.createElement(_mainFooter.default, null, /*#__PURE__*/_react.default.createElement(_mainFooter.default.TextWrapper, null, /*#__PURE__*/_react.default.createElement(_mainFooter.default.Text, null, "Simplify how your team works today."), /*#__PURE__*/_react.default.createElement(_mainFooter.default.Button, null, "Get Started")));
 }
 
 var _default = MainFooterContainer;
@@ -32464,7 +32485,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n    max-width: 400px;\n    font-size: 52px;\n    color: hsl(228, 39%, 23%);\n    @media(max-width: 768px) {\n        font-size: 42px;\n    }\n"]);
+  var data = _taggedTemplateLiteral(["\n    max-width: 400px;\n    font-size: 48px;\n    color: hsl(228, 39%, 23%);\n    @media(max-width: 768px) {\n        font-size: 42px;\n    }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -33037,7 +33058,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60097" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63225" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

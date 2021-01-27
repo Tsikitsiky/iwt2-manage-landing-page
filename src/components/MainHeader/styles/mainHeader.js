@@ -19,7 +19,7 @@ export const Container = styled.section`
 `;
 export const Title = styled.h1`
     max-width: 400px;
-    font-size: 52px;
+    font-size: 48px;
     color: hsl(228, 39%, 23%);
     @media(max-width: 768px) {
         font-size: 42px;
