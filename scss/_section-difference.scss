@@ -1,0 +1,86 @@
+.section-difference__container {
+    padding-top: 50px;
+    padding-left: 1rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+
+    @media(min-width: 768px) {
+        flex-direction: row;
+    }
+
+    .section-difference__header {
+        text-align: center;
+        padding-bottom: 40px;
+        @media(min-width: 768px) {
+            text-align: left;
+            max-width: 400px;
+            margin-right: 50px;
+        }
+    }
+
+    .section-difference__header--heading {
+        font-size: 32px;
+        color: $dark-blue;
+        @media(min-width: 768px) {
+            font-size: 34px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: $dark-grayish-blue;
+        @media(min-width: 768px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.section-difference__list {
+    h3 {
+        padding-left: 4rem;
+        height: 2rem;
+        background-color: $very-pale-red;
+        font-size: 16px;
+        color: $dark-blue;
+        margin-bottom: 0.5rem;
+        position: relative;
+        border-radius: 10px;
+
+        @media(min-width: 768px) {
+            font-size: 18px;
+            background-color: transparent;
+            
+        }
+    }
+
+    
+
+    h3::before {
+        background-color: $bright-red;
+        position: absolute;
+        left: 0;
+        width: 3rem;
+        height: 100%;
+        text-align: center;
+        color: $vary-light-gray;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .difference1 h3::before {
+        content: "01";
+    
+    }
+    .difference2 h3::before {
+        content: "02";
+    }
+
+    .difference3 h3::before {
+        content: "03";
+    }
+
+    li {
+        margin-bottom: 2rem;
+    }
+}

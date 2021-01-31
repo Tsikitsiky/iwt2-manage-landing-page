@@ -1,5 +1,4 @@
 .header-site__container {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,3 +8,32 @@
         display: none;
     }
    }
+
+   .icon_menu {
+    background-image: image('icon-menu.svg');
+    background-size: 24px 24px;
+}
+
+body > [type="checkbox"]:checked ~ header nav ~ .icon_menu {
+    display: none;
+}
+
+.header-site__container  label {
+ width: 16px;
+ height: 27px;
+ display: block;
+}
+
+@media(min-width: 1000px) {
+   .header-site__container {
+     align-items: center;
+   }
+
+   .header-site__container label {
+       display: none;
+   }
+
+   .header-site__container .get-started {
+       display: block;
+   }
+}
