@@ -1,0 +1,148 @@
+.footer-site {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $very-dark-blue;
+    color: $vary-light-gray;
+    text-align: center;
+
+    a {
+        color: $vary-light-gray;
+        font-weight: 400;
+        font-size: 16px;
+        &:hover {
+            color: $bright-red;
+        }
+    }
+
+    .footer-site__social-media-list {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 3rem;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            column-gap: 24px;
+
+            a {
+                display: block;
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    .icon {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 2rem;
+    }
+
+    .icon-facebook {
+        background-image: image("icon-facebook.svg");
+    }
+    .icon-youtube {
+        background-image: image("icon-youtube.svg");
+    }
+    .icon-twitter {
+        background-image: image("icon-twitter.svg");
+    }
+    .icon-pinterest {
+        background-image: image("icon-pinterest.svg");
+    }
+    .icon-instagram {
+        background-image: image("icon-instagram.svg");
+    }
+
+    .bottom-text-mobile {
+        margin-top: 2rem;
+    }
+
+    .bottom-text-desktop {
+        display: none;
+    }
+}
+
+.footer-site__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sitemap ul {
+    display: block;
+    columns: 2;
+    text-align: center;
+
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .btn:first-of-type {
+        margin-bottom: 1rem;
+    }
+}
+
+.update {
+    background-color: $vary-light-gray;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 18px;
+    color: $bright-red;
+}
+
+.go {
+    background-color: $bright-red;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 18px;
+    color: $vary-light-gray;
+}
+
+
+@media(min-width: 1000px) {
+    .footer-site__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-site {
+        .footer-site__social-media-list {
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .sitemap ul {
+               gap: 5rem;
+                text-align: left;
+        }
+
+        .foot {
+            gap: 3rem;
+        }
+
+        .bottom-text-mobile {
+            display: none;
+        }
+
+        .bottom-text-desktop {
+            display: block;
+        }
+
+    }
+
+}
